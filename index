@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ひろねずみのホームページ（仮）</title>
+    <style>
+        .big_font {
+            font-size: 32px;
+            margin: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>ひろねずみのホームページ（仮）</h3>
+    <div>
+        <button type="button" onclick="check(1)">あ</button>
+        <button type="button" onclick="check(2)">い</button>
+        <button type="button" onclick="check(3)">う</button>
+        <button type="button" onclick="check(4)">え</button>
+        <button type="button" onclick="check(5)">お</button>
+    </div>
+    <div id="message" class="big_font"></div>
+    <script>
+        function check(x) {
+            if (x == 1) {
+                document.getElementById('message').textContent = 'あ！';
+            }else if (x == 2){
+                document.getElementById('message').textContent = 'い!';
+            }else if (x == 3){
+                document.getElementById('message').textContent = 'う!';
+            }else if (x == 4){
+                document.getElementById('message').textContent = 'え!';
+            }else if (x == 5){
+                document.getElementById('message').textContent = 'お!';
+            }
+        }
+    </script>
+</body>
+
+</html>
